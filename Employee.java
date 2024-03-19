@@ -8,9 +8,7 @@ public class Employee implements Comparable<Employee> {
         this.age = age;
         this.salary = salary;
     }
-
-    // Геттеры для полей класса
-
+    
     public String getName() {
         return name;
     }
@@ -23,7 +21,6 @@ public class Employee implements Comparable<Employee> {
         return salary;
     }
 
-    // Метод для сравнения сотрудников по возрасту
     @Override
     public int compareTo(Employee otherEmployee) {
         return Integer.compare(this.age, otherEmployee.getAge());
